@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>PONG! Multiplayer</title>
+		<style>
+			body{
+				display: flex;
+				flex-direction: row;
+			}
+		
+			#game-canvas{
+				width: 640px;
+				height: 480px;
+			}
+		
+			#console{
+				box-sizing: border-box;
+				width: 300px;
+				height: 480px;
+				border: 1px solid #000;
+				overflow-y: scroll;
+				padding: 10px;
+			}
+		
+			.console-item{
+				overflow-wrap: break-word;
+				margin-block: 7px;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="game-canvas" width="640" height="480"></canvas>
+		<div id="console">
+			<p class="console-item">Hello World!</p>
+			<p class="console-item">Here you will see some logs about the communications with the server!</p>
+		</div>
+		<script src="scripts/pong-script.js"></script>
+	</body>
+</html>
